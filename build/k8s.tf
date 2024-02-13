@@ -1,13 +1,4 @@
-terraform {
-  required_providers {
-    kubectl = {
-      source = "gavinbunney/kubectl"
-      version = "1.14.0"
-    }
-  }
-}
-
- provider "kubectl" {
+provider "kubectl" {
    config_path = "/home/ubuntu/.kube/config"
  }
 
