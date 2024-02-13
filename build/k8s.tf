@@ -7,9 +7,9 @@ terraform {
   }
 }
 
-# provider "kubectl" {
-#   config_path = "/home/mshallom/.kube/config"
-# }
+ provider "kubectl" {
+   config_path = "/home/ubuntu/.kube/config"
+ }
 
 resource "kubectl_manifest" "express_app" {
   yaml_body = <<YAML
